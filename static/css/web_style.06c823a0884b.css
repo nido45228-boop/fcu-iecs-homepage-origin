@@ -222,13 +222,13 @@ footer {
     padding: 0;
     position: relative;
     clear: both;
-    color: #a8b0b3;
+    color: #d5dde0;
 }
 
 footer a {
     text-decoration: none;
     font-size: 13px;
-    color: #a8b0b3;
+    color: #d5dde0;
 }
 
 footer li {
@@ -245,7 +245,7 @@ footer p {
     font-size: 13px;
     line-height: 26px;
     padding-bottom: 5px !important;
-    color: #a8b0b3;
+    color: #d5dde0;
 }
 
 footer .social-icons li {
@@ -636,13 +636,13 @@ footer ul.social-icons {
 }
 
 .section-index-index .honor-card .card-body p {
-    color: #FC766A;
+    color: #a7372d;
     font-weight: 700;
 }
 
 .section-index-index .custom-btn-style {
-    background-color: #1b9dff;
-    border-color: #1b9dff #1b9dff #0084e7;
+    background-color: #006cb8;
+    border-color: #006cb8 #006cb8 #005a9a;
     color: #ffffff;
     padding: 0.7rem 2rem;
     border-radius: 50px;
@@ -655,8 +655,8 @@ footer ul.social-icons {
 }
 
 .section-index-index .custom-btn-style:hover {
-    background-color: #41adff;
-    border-color: #4eb3ff #4eb3ff #1b9dff;
+    background-color: #005f9f;
+    border-color: #005f9f #005f9f #004f86;
     color: #ffffff;
 }
 
@@ -711,7 +711,11 @@ footer ul.social-icons {
 
 .section-index-index .swiper-slide img {
     width: 360px;
-    aspect-ratio: 16/9;
+    height: auto;
+}
+
+.section-index-index #carousel .carousel-inner img.d-block.w-100 {
+    height: auto;
 }
 
 .section-index-index .index-about-backgroundimg {
@@ -761,7 +765,7 @@ footer ul.social-icons {
 
 .section-index-index .post-event-date {
     padding: 15px 20px;
-    background-color: #1b9dff;
+    background-color: #006cb8;
     color: #ffffff;
     font-size: 12px;
     margin-right: 30px;

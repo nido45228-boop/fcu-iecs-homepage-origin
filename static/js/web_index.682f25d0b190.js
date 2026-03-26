@@ -23,6 +23,12 @@ document.querySelectorAll('.index-video').forEach(element => {
     });
 });
 
+document.querySelectorAll('#carousel .carousel-inner > a').forEach(element => {
+    if (!element.getAttribute('aria-label')) {
+        element.setAttribute('aria-label', '查看公告');
+    }
+});
+
 document.querySelector('#modalForVideo').addEventListener('hide.bs.modal', () => {
     document.querySelector('#modalForVideo .modal-content').innerHTML = '';
     swiper.autoplay.start();
@@ -30,6 +36,10 @@ document.querySelector('#modalForVideo').addEventListener('hide.bs.modal', () =>
 
 window.addEventListener('load', () => {
     let index_about = document.querySelector('.index-about-background');
+    if (!index_about || !index_about.dataset.bgimg) {
+        return;
+    }
+
     let bgimg = index_about.dataset.bgimg;
-    document.getElementsByClassName('index-about-background')[0].style.backgroundImage = `url(${location.origin + bgimg})`;
+    index_about.style.backgroundImage = `url(${location.origin + bgimg})`;
 });
